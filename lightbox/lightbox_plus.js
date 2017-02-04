@@ -415,12 +415,12 @@ LightBox.prototype = {
 // === main ===
 addEvent(window,"load",function() {
 	var lightbox = new LightBox({
-		loadingimg:'loading.gif',
-		expandimg:'expand.gif',
-		shrinkimg:'shrink.gif',
-		effectimg:'zzoop.gif',
+		loadingimg:'lightbox/loading.gif',
+		expandimg:'lightbox/expand.gif',
+		shrinkimg:'lightbox/shrink.gif',
+		effectimg:'lightbox/zzoop.gif',
 		effectpos:{x:-40,y:-20},
 		effectclass:'effectable',
-		closeimg:'close.gif'
+		closeimg:'lightbox/close.gif'
 	});
 });

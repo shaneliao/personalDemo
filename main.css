@@ -1,3 +1,4 @@
+
 *{ 
   margin:0px; 
   padding:0px;
@@ -107,6 +108,11 @@
 .item{
 font-weight: 600;
 }
+
+ .myClassName
+ {
+   display:none;
+ }
 
 #colbefore{
 max-width: 700px;
