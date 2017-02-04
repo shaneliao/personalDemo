@@ -128,8 +128,10 @@ div#columns figure {
   margin: 0 2px 15px;
   padding: 0px; padding-bottom: 10px;
   transition: opacity .4s ease-in-out;
+/*
   column-break-inside: avoid;
   display: inline-block;
+*/
 }
 div#columns figure img {
   width: 100%; height: auto;
@@ -139,7 +141,7 @@ div#columns figure img {
 }                               
 
 div#columns figure iframe {
-  width: 100%; height: auto;
+    width: 100%;
   border-bottom: 1px solid #ccc;
   padding-bottom: 15px;
   margin-bottom: 5px;
