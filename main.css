@@ -173,10 +173,11 @@ div#columns figure iframe {
   .smallmenu figure  { width: 100%; }
 }              
 
+/*
 @media screen and (orientation: portrait){
   #columns { column-gap: 0px; }
   #columns figure { width: 100%; }
   #menu { display: none; }
   #smallmenu ul {display: block;}
   .smallmenu figure  { width: 100%; }
-}
+}*/
