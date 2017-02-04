@@ -12,6 +12,7 @@
     <script type="text/javascript" src="lightbox/lightbox_plus.js"></script>
 </head>
 <body>
+<div class="loading">正在載入頁面資料，資料龐大，請稍等片刻...</div>
 
 <div class="header">
     <div class="title">Shane's Personal Works</div>
@@ -54,23 +55,23 @@
         <div id="columns">
           <figure>
               <a href="images/grapgic_graduation01.jpg" rel="lightbox" title=""><img src="images/grapgic_graduation01.jpg" id="Img1" alt></a>
-              <figcaption>畢業紀念冊作品，第一頁人物介紹部分。</figcaption>
+              <figcaption>復古風畢業紀念冊作品，第一頁人物介紹部分。</figcaption>
           </figure>
           <figure>
               <a href="images/grapgic_graduation02.jpg" rel="lightbox" title=""><img src="images/grapgic_graduation02.jpg"  id="Img2" alt></a>
-              <figcaption>畢業紀念冊作品，第二頁人物介紹部分。</figcaption>
+              <figcaption>復古風畢業紀念冊作品，第二頁人物介紹部分。</figcaption>
           </figure>
           <figure>
               <a href="images/grapgic_graduation03.jpg" rel="lightbox" title=""><img src="images/grapgic_graduation03.jpg" id="Img3" alt></a>
-              <figcaption>畢業紀念冊作品，第三頁人物介紹部分。</figcaption>
+              <figcaption>復古風畢業紀念冊作品，第三頁人物介紹部分。</figcaption>
           </figure>
           <figure>
               <a href="images/grapgic_graduation04.jpg" rel="lightbox" title=""><img src="images/grapgic_graduation04.jpg" id="Img4" alt></a>
-              <figcaption>畢業紀念冊作品，第四頁團體生活照部分。</figcaption>
+              <figcaption>復古風畢業紀念冊作品，第四頁團體生活照部分。</figcaption>
           </figure>  
           <figure>
               <a href="images/grapgic_graduation05.jpg" rel="lightbox" title=""><img src="images/grapgic_graduation05.jpg" id="Img5" alt></a>
-              <figcaption>畢業紀念冊作品，第五頁團體生活照部分。</figcaption>
+              <figcaption>復古風畢業紀念冊作品，第五頁團體生活照部分。</figcaption>
           </figure>
           <figure>
               <a href="images/grapgic_poster01.jpg" rel="lightbox" title=""><img src="images/grapgic_poster01.jpg" id="Img6" alt></a>
@@ -126,8 +127,9 @@
                 ImgCount--;
                 if (ImgCount === 0) {
                     console.log("All images Loaded..");
-		    $(".myClassName").show(); //等網頁全部的DOM都載入後再顯示.myClassName內容
-			
+		            $(".myClassName").show(); //等網頁全部的DOM都載入後再顯示.myClassName內容
+                    $(".loading").hide(); //.loading提示文字，當載入完成後提示立刻消失。
+
                 }
             }
  
@@ -135,6 +137,7 @@
                 imageLoaded.call(this);
             } else {
                 $(this).one('load', ImageLoading);
+                
             }
         });
     });
