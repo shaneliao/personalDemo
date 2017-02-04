@@ -1,0 +1,182 @@
+*{ 
+  margin:0px; 
+  padding:0px;
+ }
+.header{
+    
+    position: relative;
+    width: 100%;
+
+}
+
+.title{
+    font-size: 32px;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+}
+
+.wrap{
+    max-width:700px;
+    min-width:auto;
+    margin: 10px auto 10px ;
+    padding-bottom: 20px;
+
+}    
+
+#menu a{
+    text-decoration:none;
+    color:darkgray
+}
+#menu ul {
+    
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:auto;
+}
+
+#menu ul li {
+    width: 116px;
+    text-align: center;
+    float:left;
+}
+
+#menu ul li:hover a {
+    transition: 0.5s;
+    color:#333333;
+
+}
+
+#menu ul li:active a{
+    color:#0000FF;
+}
+
+#smallmenu{
+    max-width: 300px;
+    margin:auto;
+}
+#smallmenu a{
+   
+   text-align: center;
+   text-decoration:none; 
+   color:#000; 
+   display:block; 
+   width:300px;
+}
+#smallmenu ul{
+    width:100%;
+    list-style-type:none;
+    display: none;
+    
+}
+#smallmenu ul li{
+    background: #eee;
+    line-height:40px; 
+    text-align:center;
+    position:relative; 
+    display:block; 
+
+    
+}
+
+#smallmenu ul li ul li{ 
+     float:none;
+     margin-top:0px; 
+     background-color:whitesmoke;
+    
+
+ } 
+#smallmenu ul li ul{
+     height: auto;
+     position:absolute;
+     display:none;
+    
+}
+#smallmenu ul li:hover ul{ 
+
+     display:block;
+ }
+#smallmenu ul li ul li:hover a{ 
+
+     background: white;
+ }
+.item{
+font-weight: 600;
+}
+
+#colbefore{
+max-width: 700px;
+margin: auto;
+
+}
+#columns{
+    width:auto;
+}
+
+#columns .personaldata{
+    margin: auto 50px auto 50px ;
+}
+
+div#columns figure {
+  background: #fefefe;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 0 2px 15px;
+  padding: 0px; padding-bottom: 10px;
+  transition: opacity .4s ease-in-out;
+  column-break-inside: avoid;
+  display: inline-block;
+}
+div#columns figure img {
+  width: 100%; height: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}                               
+
+div#columns figure iframe {
+  width: 100%; height: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}      
+
+.bottom{
+    padding: 10px 0px 0px 0px;
+    height: 50px;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    background: #eee;
+
+}
+
+.bottomtext{
+    border-color: rgb(0, 206, 255);
+    border-style: double;
+    margin:auto;
+    max-width: 200px;
+    border-radius:20px;
+    background:#eee;
+}
+@media screen and (max-width: 700px){
+  #columns { column-gap: 0px; }
+  #columns figure { width: 100%; }
+  #menu { display: none; }
+  #smallmenu ul {display: block;}
+  .smallmenu figure  { width: 100%; }
+}              
+
+@media screen and (orientation: portrait){
+  #columns { column-gap: 0px; }
+  #columns figure { width: 100%; }
+  #menu { display: none; }
+  #smallmenu ul {display: block;}
+  .smallmenu figure  { width: 100%; }
+}
